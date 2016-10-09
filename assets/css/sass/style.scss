@@ -1,0 +1,401 @@
+
+body{
+	font-family: 'Roboto', sans-serif !important;
+	background-color: $bg-white-dark;
+	color: $dark;
+}
+
+.menu-gen{
+	.sub-menu{
+		padding: 15px 0;
+		background-color: $bg-white;
+		border-bottom: 2px solid $dark;
+		margin: 0px;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		color : $dark;
+		font-weight: bold;
+
+		&.active{
+			background-color: $grey;
+			color : $bg-white;
+		}
+	}
+}
+
+.hero-contener{
+	background-color: $bg-white;
+	height: 230px;
+	position: relative;
+	overflow: hidden;
+
+	.hero-pic{
+		float: left;
+		position: relative;
+		width: 200px;
+		height: 200px;
+	    line-height: 200px;
+	    overflow: hidden;
+	    text-align: center;
+
+		img{
+			padding: 0 10px;
+			width: calc(100% - 20px);
+			max-width: 300px;
+			height: auto;
+			margin: auto;
+			vertical-align: middle;
+		}
+	}
+
+	.hero-info{
+		float: left;
+		width: calc(100% - 240px);
+		line-height: 24px;
+		padding: 10px 20px;
+
+		.line{
+			float: left;
+			width: 100%;
+
+			.title{
+				float: left;
+				width: 30%;
+			}
+
+			.res{
+				float: left;
+				width: 70%;
+			}
+		}
+
+		.truncated {
+			display: -webkit-box;
+			display: -moz-box;
+			-webkit-line-clamp: 4;
+			-moz-line-clamp: 4;
+			line-clamp: 4;
+			-webkit-box-orient: vertical;
+			-moz-box-orient: vertical;
+			box-orient: vertical;
+			text-overflow: ellipsis;
+    		overflow: hidden;
+
+		}
+
+		.bold{
+			font-weight: bold;
+		}
+	}
+}
+
+.bt-more-info{
+	background-color: $blue-light;
+	color: $bg-white; 
+	line-height: 230px;
+	height: 230px;
+	cursor: pointer;
+
+	i{
+		font-size: 32px;
+	}
+}
+
+
+.hero-details{
+	position: relative;
+	background-color: $bg-white;
+	height: 100%;
+	min-height: 100vh;
+	line-height: 16px;
+
+	.icone-back{
+		position: absolute;
+		top: 15px;
+		left: 15px;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background-color: rgba(20, 20, 20, 0.8);
+		text-align: center;
+		cursor: pointer;
+		border: 3px $dark solid;
+		z-index: 2;
+
+		&:hover{
+			border: 3px $bg-white solid;
+		background-color: rgba(0, 0, 0, 0.9);
+		}
+
+		i{
+			font-size: 36px;
+			color: $bg-white;
+    		line-height: 40px;
+		}
+	}
+
+	.banner-hero{
+		display: block;
+		height: 250px;
+		background-size: 100%;
+		background-position: 50% 0;
+		background-repeat: no-repeat;
+	}
+
+	.img-profil{
+		width: 200px;
+		height: 200px;
+		overflow: hidden;
+		background-color: #121212;
+		position: absolute;
+		top: 180px;
+		left: 50px;
+
+		.favoris{
+			top: 0px;
+			left: 155px;
+		}
+
+		img{
+			width: 100%;
+			height: auto;
+			margin: auto;
+		}
+	}
+
+	.hero-title{
+		text-align: right;
+		font-size: 60px;
+		line-height: 72px;
+		font-weight: bold;
+
+		&.hero-name{
+			font-size: 36px;
+			line-height: 42px;
+			font-weight: normal;
+			margin-bottom: 30px;
+		}
+
+	}
+
+	.editable{
+		&:focus{
+			background-color: #fff;
+			border-left: 1px solid $blue;
+			border-bottom: 1px solid $blue;
+			padding: 5px 10px; 
+		}
+	}
+
+	.pseudo-hero{
+		display: none;
+	}
+
+	.bio{
+		line-height: 22px;
+	}
+
+}
+
+.favoris{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	height: 20px;
+	width: 20px;
+	z-index: 3;
+	cursor: pointer;
+
+	i{
+		font-size: 48px;
+		color: #f4d942;
+	}
+}
+
+//____________________________________________________________ GENERALIZE
+
+.f-l{
+	float: left;
+}
+
+.f-r{
+	float: right;
+}
+
+
+.bold{
+	font-weight: bold;
+}
+
+.center{
+	text-align: center;
+}
+
+
+//_______________________________________________________________MEDIA
+
+
+
+
+@media screen and (max-width: $screen-md) {
+	.hero-contener{
+		.hero-info .truncated{
+			-webkit-line-clamp: 1;
+			-moz-line-clamp: 1;
+			line-clamp: 1;
+		}
+	}
+
+}
+
+
+@media screen and (max-width: $screen-sm) {
+	.hero-details .hero-title{
+		font-size: 42px;
+		line-height: 54px;
+		
+		&.hero-name{
+			font-size: 24px;
+			line-height: 32px;
+			margin-bottom: 45px;
+		}
+	}
+}
+
+
+@media screen and (max-width: $screen-xs) {
+	.hero-contener .hero-pic, .hero-contener .hero-info{
+		width: 100%;
+	}
+
+	.hero-contener, .bt-more-info{
+		height: 300px; 
+	}
+	.bt-more-info{
+		line-height: 300px; 
+	}
+
+	.hero-details .img-profil{
+		position: relative;
+		width: 100%;
+		max-width: 300px;
+		max-height: 300px;
+		height: auto;
+		margin: auto;
+		top: 0px;
+		left: 0px;
+		margin-bottom: 15px;
+
+
+		.favoris{
+			top: 0px;
+			left: 250px;
+		}
+
+	}
+
+	.hero-details{
+		.hero-title{
+			text-align: left;
+			font-size: 16px;
+			line-height: normal;
+			font-weight: normal;
+			margin-bottom: 15px;
+
+			&.hero-name{
+				font-size: 16px;
+				line-height: normal;
+				margin-bottom: 0px;
+			}
+		}
+
+		.pseudo-hero{
+			display: inline-block;
+			margin-bottom: 0px;
+		}
+	} 
+}
+
+
+
+
+@-moz-document url-prefix() { 
+    .hero-contener{
+		.hero-info{
+		    padding-left: 10px;
+
+			.truncated{
+	    		position:relative;
+			    line-height: 22px;
+			    height: 88px;
+
+			    &:after {
+				    content: "...";
+				    font-weight: bold;
+				    position: absolute;
+				    bottom: 0;
+				    right: 0;
+				    padding: 0 0 1px 45px;
+			    }
+		    }
+		} 
+    }
+
+	@media screen and (max-width: $screen-md) {
+		.hero-contener .hero-info .truncated{
+    		position:relative;
+		    line-height: 22px;
+		    height: 22px;
+
+		    &:after {
+			    content: "...";
+			    font-weight: bold;
+			    position: absolute;
+			    bottom: 0;
+			    right: 0;
+			    padding: 0 0 1px 45px;
+		    }
+	    }
+	}
+}
+
+
+
+// End Responsive Rules
+
+@include margin-system("");
+@media screen and (min-width: $screen-sm) { @include margin-system('s-'); }
+@media screen and (min-width: $screen-md) { @include margin-system('m-'); }
+@media screen and (min-width: $screen-lg) { @include margin-system('l-'); }
+
+// PADDING SYSTEM
+
+@include padding-system("");
+@media screen and (min-width: $screen-sm) { @include padding-system('s-'); }
+@media screen and (min-width: $screen-md) { @include padding-system('m-'); }
+@media screen and (min-width: $screen-lg) { @include padding-system('l-'); }
+
+// COL SYSTEM
+
+@include col-system("");
+@media screen and (max-width: $screen-xs) { @include col-system('xs-'); }
+@media screen and (max-width: $screen-sm) { @include col-system('s-'); }
+@media screen and (max-width: $screen-md) { @include col-system('m-'); }
+@media screen and (max-width: $screen-lg) { @include col-system('l-'); }
+
+// COL 5 SYSTEM
+
+@include col-5-system("");
+@media screen and (max-width: $screen-xs) { @include col-5-system('xs-'); }
+@media screen and (max-width: $screen-sm) { @include col-5-system('s-'); }
+@media screen and (max-width: $screen-md) { @include col-5-system('m-'); }
+@media screen and (max-width: $screen-lg) { @include col-5-system('l-'); }
+
+// Hide SYSTEM
+
+@include hide-system("");
+@media screen and (max-width: $screen-xs) { @include hide-system('xs-'); }
+@media screen and (max-width: $screen-sm) { @include hide-system('s-'); }
+@media screen and (max-width: $screen-md) { @include hide-system('m-'); }
+@media screen and (max-width: $screen-lg) { @include hide-system('l-'); }

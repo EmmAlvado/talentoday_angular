@@ -1,0 +1,47 @@
+
+<div ng-repeat="(key, item) in runnersArray | filter:filterFav">
+	<div class="col-12" >
+		<div class="col-11 hero-contener mt1 pt1 pb1">
+
+			<div class="favoris" ng-click="favoriSystem(item.Pseudo, key)">
+				<i class="icon-star-full" ></i>
+			</div>
+			<div class="hero-pic">
+				<img ng-src="assets/img/{{item.Pic}}">
+			</div>
+			<div class="hero-info">
+				<p class="mt0 mb0 col-6 m-col-12 xs-hide">
+					<span class="bold l-col-4 m-col-6 xs-col-12">Nickname:</span>
+					<span class="l-col-8 m-col-6 xs-col-12">{{item.PseudoEdit}}</span>
+				</p>
+				<p class="mt0 mb0 col-6 m-col-12">
+					<span class="bold l-col-4 m-col-6  xs-col-12">Name:</span>
+					<span class="l-col-8 m-col-6  xs-col-12">{{item.Name}}</span>
+				</p>
+				<p class="mt0 mb0 col-6 m-col-12 xs-hide">
+					<span class="bold l-col-4 m-col-6  xs-col-12">Birth:</span>
+					<span class="l-col-8 m-col-6  xs-col-12">{{item.Birth}}</span>
+				</p>
+				<p class="mt0 mb0 col-6 m-col-12">
+					<span class="bold l-col-4 m-col-6  xs-col-12">Speed:</span>
+					<span class="l-col-8 m-col-6  xs-col-12">{{item.Speed}}</span>
+				</p>
+				<p class="mt0 mb0 col-6 m-col-12">
+					<span class="bold l-col-4 m-col-6  xs-col-12">Phone:</span>
+					<span class="l-col-8 m-col-6  xs-col-12">{{item.Phone}}</span>
+				</p>
+				<p class="mt0 mb0 col-6 m-col-12 xs-hide">
+					<span class="bold l-col-4 m-col-6  xs-col-12">Adress:</span>
+					<span class="l-col-8 m-col-6  xs-col-12">{{item.Adr}}</span>
+				</p>
+				<p class="mt0 mb0 col-12 xs-hide">
+					<span class="bold col-12">Biography:</span>
+					<span class="col-12 truncated">{{item.Desc}}</span>
+				</p>
+			</div>
+		</div>
+		<a ng-href="#/details/{{item.Pseudo}}">
+			<p class="col-1 bt-more-info mt1 pt1 pb1 center"> <i class="icon-right"></i> </p>
+		</a>
+	</div>
+</div>

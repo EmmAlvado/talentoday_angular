@@ -1,0 +1,51 @@
+
+<div class="col-12 hero-details">  
+	<div class="icone-back"><a href="#/home"><i class="icon-reply"></i></a></div>
+	<div id="banner-hero" class="banner-hero xs-hide"></div>
+
+	<div class="img-profil">
+		<div class="favoris" ng-click="favoriSystem()"><i class="{{hero.Favoris}}"></i></div>
+		<img ng-src="assets/img/{{hero.Pic}}">
+	</div>
+
+	<div class="p1 f-l">
+		<div class="col-12">
+			<div class="bold pseudo-hero col-5">Nickname: </div>
+			<div class="hero-title  xs-col-7">
+				<span contenteditable="true" class="editable" ng-blur="editHero( $event ,'PseudoEdit')">
+					{{hero.PseudoEdit}}
+				</span>
+			</div>
+		</div>
+
+		<div class="col-12">
+			<div class="bold pseudo-hero col-5">Name: </div>
+			<div class="hero-title hero-name xs-col-7">
+				<span contenteditable="true" class="editable" ng-blur="editHero( $event ,'Name')">
+					{{hero.Name}}
+				</span>
+			</div>
+		</div>
+
+		<div class="mt1 col-6 m-col-12">
+			<span class="bold l-col-4 m-col-6 xs-col-12">Birth:</span>
+			<span class="l-col-8 m-col-6 editable xs-col-12" contenteditable="true" ng-blur="editHero( $event ,'Birth')">{{hero.Birth}}</span>
+		</div>
+		<div class="mt1 col-6 m-col-12">
+			<span class="bold l-col-4 m-col-6 xs-col-12">Speed:</span>
+			<span class="l-col-8 m-col-6 editable xs-col-12" contenteditable="true" ng-blur="editHero( $event ,'Speed')">{{hero.Speed}} m/s</span>
+		</div>
+		<div class="mt1 col-6 m-col-12">
+			<span class="bold l-col-4 m-col-6 xs-col-12">Phone:</span>
+			<span class="l-col-8 m-col-6 editable xs-col-12" contenteditable="true" ng-blur="editHero( $event ,'Phone')">{{hero.Phone}}</span>
+		</div>
+		<div class="mt1 col-6 m-col-12">
+			<span class="bold l-col-4 m-col-6 xs-col-12">Adress:</span>
+			<span class="l-col-8 m-col-6 editable xs-col-12" contenteditable="true" ng-blur="editHero( $event ,'Adr')">{{hero.Adr}}</span>
+		</div>
+		<div class="mt1 col-12">
+			<span class="bold col-12 mt1 mb1">Biography:</span>
+			<span class="col-12 editable bio" contenteditable="true" ng-blur="editHero( $event ,'Desc')">{{hero.Desc}}</span>
+		</div>
+	</div>
+</div>

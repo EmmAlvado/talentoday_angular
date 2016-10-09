@@ -1,0 +1,68 @@
+{
+	"Flash" : {
+		"Pseudo": "Flash"
+		,"PseudoEdit": "Flash"
+		, "Name": "Jay Garrick"
+		, "Pic": "flash.jpg"
+		, "Wall": "flash_wall.jpg"
+		, "Speed": "637.2 m/s"
+		, "Birth": "1940"
+		, "Desc": "Jason Peter Garrick is a college student prior to 1940 who accidentally inhales hard water vapors after taking a smoke break in his laboratory where he had been working. As a result, he finds that he can run at superhuman speed and has similarly fast reflexes (retcons imply the inhalation simply activated a latent metagene). After a brief career as a college football star, he dons a red shirt with a lightning bolt and a stylized metal helmet with wings (based on images of the Roman god Mercury) then begins to fight crime as the Flash. The helmet belonged to Jay's father, Joseph, who fought during World War I. He has been seen using the helmet as a weapon/type of shield, as seen in Infinite Crisis. He has also used it to direct a beam of light at Eclipso."
+		, "Phone": " 06 21 45 85 01"
+		, "Adr": "Keystone City"
+		, "Favoris": "icon-star-empty"
+	}
+	,"Quicksilver" : {
+		"Pseudo": "Quicksilver"
+		,"PseudoEdit": "Quicksilver"
+		, "Name": "Pietro Maximoff"
+		, "Pic": "quick.jpg"
+		, "Wall": "quicksilver_wall.png"
+		, "Speed": "750 m/s"
+		, "Birth": "1964"
+		, "Desc": "Pietro and his twin sister, Wanda, were raised by Django and Marya Maximoff, a Roma couple. As adolescents Pietro and his sister Wanda discovered that they had peculiar talents. When Django began to steal food to feed his starving family, enraged villagers attacked the roma camp. Using his phenomenal speed, Pietro fled from the camp with his sister. Over the next few years, Wanda and Pietro wandered central Europe, living off the land. One day, Wanda accidentally caused a house to burst into flames with her uncontrollable hex powers and the pair was chased by superstitious townspeople. Despite Pietro's attempt to defend her, the twins were soon overpowered and were rescued by Magneto."
+		, "Phone": " 06 25 68 45 32"
+		, "Adr": "Wundagore Mountain"
+		, "Favoris": "icon-star-empty"
+	}
+	,"Shazam" : {
+		"Pseudo": "Shazam"
+		,"PseudoEdit": "Shazam"
+		, "Name": "Billy Batson"
+		, "Pic": "shazam.jpeg"
+		, "Wall": "shazam_wall.png"
+		, "Speed": "800 m/s"
+		, "Birth": "1939"
+		, "Desc": "Billy met the ancient wizard Shazam who had protected mankind from the Seven Deadly Enemies for thousands of years. Shazam had observed Billy as he dealt with and endured the trials and hardships of his young life. Shazam was impressed with Billy's irrepressible altruism and optimism. He determined Billy was the worthy and proper recipient of the power of the Elders, and it was thus that Billy was chosen to become Shazam's latest champion and granted the powers the Elders; Solomon, Hercules, Atlas, Zeus, Achilles and Mercury whenever he spoke the wizard's name (SHAZAM!) aloud."
+		, "Phone": " 06 91 42 84 65"
+		, "Adr": "Fawcett City"
+		, "Favoris": "icon-star-empty"
+	}
+	,"Superman" : {
+		"Pseudo": "Superman"
+		,"PseudoEdit": "Superman"
+		, "Name": "Clark Ken"
+		, "Pic": "super.jpg"
+		, "Wall": "super_wall.jpg"
+		, "Speed": "926 m/s"
+		, "Birth": "1938"
+		, "Desc": " Superman is born on an alien world to a technologically advanced species that resembles humans. When his world is on the verge of destruction, his father, a scientist, places his infant son alone in a spaceship that takes him to Earth. The earliest newspaper strips name the planet \"Krypton\", the baby \"Kal-L\", and his biological parents \"Jor-L\" and \"Lora\". The ship lands in the American countryside, where the baby is adopted by the Kents. The Kents name the boy Clark and raise him in a farming community. The Kents teach Clark he must conceal his otherworldly origins and use his fantastic powers to do good. Clark creates the costumed identity of Superman so as to protect his personal privacy and the safety of his loved ones. As Clark Kent, he wears eyeglasses to disguise his face and wears his Superman costume underneath his clothes so that he can change at a moment's notice. To complete this disguise, Clark avoids violent confrontation, preferring to slip away and change into Superman when danger arises, and suffers occasional ridicule for his apparent cowardice."
+		, "Phone": " 06 51 24 73 68"
+		, "Adr": "Metropolis"
+		, "Favoris": "icon-star-empty"
+	}
+	,"Northstar" : {
+		"Pseudo": "Northstar"
+		,"PseudoEdit": "Northstar"
+		, "Name": "Jean-Paul Beaubier"
+		, "Pic": "northstar.jpg"
+		, "Wall": "northstar_wall.jpg"
+		, "Speed": "876 m/s"
+		, "Birth": "1979"
+		, "Desc": " Jean-Paul Beaubier is born to a French Canadian family in Montreal, but after his parents die in an automobile accident during his childhood, he and his twin sister, Jeanne-Marie, are separated. Jean-Paul is later adopted, but his adopted parents are killed after only a couple of years. Prior to his debut as a superhero, Beaubier competes as a professional skier. He became an elite level skier during his teenage years, prior to his mutation surfacing. Once he develops his mutant abilities he becomes virtually unbeatable and eventually bores of the sport due to the lack of competition."
+		, "Phone": " 06 45 31 52 47"
+		, "Adr": "Montréal"
+		, "Favoris": "icon-star-empty"
+	}
+
+}

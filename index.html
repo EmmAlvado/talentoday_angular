@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+	<head>
+		<base href="http://localhost/angular_talentoday_emma/">
+		<link rel="stylesheet" href="assets/css/app.css" />
+		<link rel="stylesheet" href="assets/css/icone.css" />
+	</head>
+	<body >	
+
+		<div ng-app="myApp">
+			<ng-menu></ng-menu>
+		 	<ng-view></ng-view>
+		</div>
+
+
+
+		<script src="//code.angularjs.org/1.4.0/angular.min.js"></script>
+		<script src="//code.angularjs.org/1.4.0/angular-animate.min.js"></script>
+		<script src="//code.angularjs.org/1.4.0/angular-route.min.js"></script>
+		<script src="//code.angularjs.org/1.4.0/angular-resource.min.js"></script>
+		<script src="//code.angularjs.org/1.4.0/angular-sanitize.min.js"></script>
+		<script src="//code.angularjs.org/1.4.0/angular-touch.min.js"></script>
+		<script src="assets/libs/ngStorage.min.js"></script>
+
+
+		<script src="app/app.module.js"></script>
+		<script src="app/app.routes.js"></script>
+
+		<script src="app/shared/services/services.js"></script>
+
+
+		<script src="app/component/home/home-controller.js"></script>
+		<script src="app/component/favoris/favoris-controller.js"></script>
+		<script src="app/component/details/details-controller.js"></script>
+		<script src="app/shared/menu/menu-directive.js"></script>
+
+
+	</body>
+</html>
